@@ -17,3 +17,5 @@ To run, you should first run `./gradlew clean build` in order to create the Jar 
 From there, you can run somthing like: `java -jar build/libs/apportionment.jar testStates.csv --huntingtonHill`
 
 You can choose CSV files (example given) or .XLSX files. The program defaults to huntingtonHill, but use hamilton if the hamilton flag is supplied
+
+Note - Sometimes, the Huntington Hill and Hamlilton methods have the same output

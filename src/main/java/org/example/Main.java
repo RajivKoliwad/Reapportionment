@@ -1,15 +1,11 @@
 package org.example;
-//import java.io.BufferedReader;
-//import java.io.FileReader;
-//import java.io.IOException;
-//import java.util.ArrayList;
+
 
 public class Main {
     public static void main(String[] args) {
-
-        StateList testList = Reader.readXLSXFile(args);//call on csv reader to fill testList
-        testList.assignReps(); //call on method which calculates apportionment
-        System.out.println(testList); //prints states with number of reps
+        StateList testList = Reader.readFile(args);//call file reader
+        testList.assignReps(); //given list of states, assign representatives
+        System.out.println(testList); //prints states with number of reps for given apportionment algorithm
     }
 
 }
